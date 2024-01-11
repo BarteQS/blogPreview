@@ -154,6 +154,7 @@ main {
 .card__title:focus {
     cursor: pointer;
     color: var(--clr-yellow);
+
 }
 
 .card__desc {
@@ -179,4 +180,17 @@ main {
     -webkit-box-shadow: 8px 8px 0 -1px rgba(0, 0, 0, 1);
     -moz-box-shadow: 8px 8px 0 -1px rgba(0, 0, 0, 1);
     box-shadow: 8px 8px 0 -1px rgba(0, 0, 0, 1);
+
+    -webkit-transition: box-shadow .2s linear;
+    -moz-transition: box-shadow .2s linear;
+    -ms-transition: box-shadow .2s linear;
+    -o-transition: box-shadow .2s linear;
+    transition: box-shadow .2s linear;
+}
+
+.card:has(.card__title:hover),
+.card:has(.card__title:focus) {
+    -webkit-box-shadow: 8px 8px 0 4px rgba(0, 0, 0, 1);
+    -moz-box-shadow: 8px 8px 0 4px rgba(0, 0, 0, 1);
+    box-shadow: 8px 8px 0 6px rgba(0, 0, 0, 1);
 }
