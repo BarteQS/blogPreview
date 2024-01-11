@@ -94,3 +94,30 @@ h6 {
 }
 
 /* CSS Reset END */
+
+/* Website styling START */
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Figtree', 'sans-serif';
+    font-weight: var(--fw-semibold);
+    background-color: var(--clr-yellow);
+}
+
+.bold {
+    font-weight: var(--fw-extrabold);
+}
+
+main {
+    margin: 1.5rem;
+}
+
+.card {
+    border: 1px solid black;
+    background-color: #fff;
+    max-width: 336px;
+    padding: 1em;
+    border-radius: 1em;
+}
